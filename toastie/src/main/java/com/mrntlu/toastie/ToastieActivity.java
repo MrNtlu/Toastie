@@ -20,7 +20,7 @@ public class ToastieActivity {
     private Context context;
     private int icon=R.drawable.ic_warning_white_24dp;
     private String message="No text!";
-    private int cardBackgroundColor=android.R.color.white;
+    private int cardBackgroundColor=android.R.color.black;
     private float cardElevation=4;
     private float cardCornerRadius=8;
     private float textSize=16;

@@ -1,5 +1,5 @@
 # Toastie
-[![](https://jitpack.io/v/MrNtlu/Toastie.svg)](https://jitpack.io/#MrNtlu/Toastie)
+[![API](https://img.shields.io/badge/API-23%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=23) [![](https://jitpack.io/v/MrNtlu/Toastie.svg)](https://jitpack.io/#MrNtlu/Toastie)
 
 ## Getting Started
 ### Gradle
