@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.button4).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ToastActivity.makeAllCustomToast(MainActivity.this)
+                ToastieActivity.makeAllCustomToast(MainActivity.this)
                         .setTypeFace(Typeface.DEFAULT_BOLD)
                         .setTextSize(16)
                         .setCardRadius(25)

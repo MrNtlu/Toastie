@@ -3,4 +3,9 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+
+    <color name="infoColor">#1565C0</color>
+    <color name="successColor">#2E7D32</color>
+    <color name="warningColor">#b71c1c</color>
+    <color name="errorColor">#FDD835</color>
 </resources>
