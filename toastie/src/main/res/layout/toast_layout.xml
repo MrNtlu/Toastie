@@ -7,10 +7,15 @@
     android:orientation="vertical"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+    app:contentPaddingTop="8dp"
+    app:contentPaddingBottom="8dp"
+    app:contentPaddingLeft="12dp"
+    app:contentPaddingRight="12dp"
+    app:cardElevation="4dp"
     app:cardCornerRadius="8dp">
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
         <ImageView
             android:id="@+id/toastIcon"
