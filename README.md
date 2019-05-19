@@ -86,3 +86,7 @@ Same as previous one but different way calling it.
 ToastieActivity.makeAllCustomToast(MainActivity.this,"Fully custom toast. Ugly as ... :)",R.drawable.ic_info_black_36dp,
                         R.color.infoColor,cornerRadius,elevation,textSize,Typeface.SANS_SERIF,Gravity.TOP, xOffset,yOffset,Toast.LENGTH_LONG).show();
 ```
+
+## Screenshots
+
+<img src="https://raw.githubusercontent.com/MrNtlu/Toastie/master/art/Toastie.jpg">
