@@ -2,6 +2,7 @@ package com.mrntlu.toastie;
 
 import android.content.Context;
 import android.graphics.Typeface;
+import android.os.Build;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -91,7 +92,11 @@ public class ToastieActivity {
         ImageView toastIcon=view.findViewById(R.id.toastIcon);
         TextView toastMessage=view.findViewById(R.id.toastMessage);
 
-        cardView.setCardBackgroundColor(context.getColor(cardBackgroundColor));
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            cardView.setCardBackgroundColor(context.getColor(cardBackgroundColor));
+        }else{
+            cardView.setBackgroundColor(context.getResources().getColor(cardBackgroundColor));
+        }
         cardView.setCardElevation(cardElevation);
         cardView.setRadius(cardCornerRadius);
         toastIcon.setImageDrawable(context.getDrawable(icon));
