@@ -1,5 +1,5 @@
 # Toastie
-[![API](https://img.shields.io/badge/API-23%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=23) [![](https://jitpack.io/v/MrNtlu/Toastie.svg)](https://jitpack.io/#MrNtlu/Toastie)
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Toastie-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/7674) [![API](https://img.shields.io/badge/API-23%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=23) [![](https://jitpack.io/v/MrNtlu/Toastie.svg)](https://jitpack.io/#MrNtlu/Toastie)
 
 ## Getting Started
 ### Gradle
