@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.Toast;
-import com.mrntlu.toastie.ToastieActivity;
 
 public class MainActivity extends AppCompatActivity {
 
