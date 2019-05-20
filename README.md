@@ -18,8 +18,7 @@ allprojects {
 
 ```gradle
 dependencies {
-	...
-  implementation 'com.github.MrNtlu:Toastie:1.0.1'
+    implementation 'com.github.MrNtlu:Toastie:1.0.2'
 }
 ```
 
