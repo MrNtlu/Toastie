@@ -16,7 +16,7 @@ import androidx.cardview.widget.CardView;
  * Created by MrNtlu on 19.05.2019.
  */
 
-public class ToastieActivity {
+public class Toastie {
 
     private Context context;
     private int icon=R.drawable.ic_warning_white_24dp;
@@ -30,49 +30,49 @@ public class ToastieActivity {
     private int xOffset;
     private int yOffset;
 
-    public ToastieActivity() {
+    public Toastie() {
     }
 
-    public ToastieActivity(Context context){
+    public Toastie(Context context){
         this.context=context;
     }
 
-    public ToastieActivity setIcon(int icon) {
+    public Toastie setIcon(int icon) {
         this.icon = icon;
         return this;
     }
 
-    public ToastieActivity setMessage(String message) {
+    public Toastie setMessage(String message) {
         this.message = message;
         return this;
     }
 
-    public ToastieActivity setCardBackgroundColor(int cardBackgroundColor) {
+    public Toastie setCardBackgroundColor(int cardBackgroundColor) {
         this.cardBackgroundColor = cardBackgroundColor;
         return this;
     }
 
-    public ToastieActivity setCardElevation(float elevation){
+    public Toastie setCardElevation(float elevation){
         this.cardElevation=elevation;
         return this;
     }
 
-    public ToastieActivity setCardRadius(float radius){
+    public Toastie setCardRadius(float radius){
         this.cardCornerRadius=radius;
         return this;
     }
 
-    public ToastieActivity setTextSize(float textSize){
+    public Toastie setTextSize(float textSize){
         this.textSize=textSize;
         return this;
     }
 
-    public ToastieActivity setTypeFace(Typeface typeface){
+    public Toastie setTypeFace(Typeface typeface){
         this.typeface=typeface;
         return this;
     }
 
-    public ToastieActivity setGravity(int gravity,int xOffset,int yOffset){
+    public Toastie setGravity(int gravity, int xOffset, int yOffset){
         this.gravity=gravity;
         this.xOffset=xOffset;
         this.yOffset=yOffset;
@@ -118,8 +118,8 @@ public class ToastieActivity {
      * @param duration Duration of the toast message.
      * @return Toast
      */
-    public static Toast infoToast(Context context, String message,int duration){
-        return new ToastieActivity(context)
+    public static Toast info(Context context, String message, int duration){
+        return new Toastie(context)
                 .setIcon(R.drawable.ic_info_black_24dp)
                 .setMessage(message)
                 .setCardBackgroundColor(R.color.infoColor)
@@ -133,8 +133,8 @@ public class ToastieActivity {
      * @param duration Duration of the toast message.
      * @return Toast.
      */
-    public static Toast centerInfoToast(Context context,String message,int duration){
-        Toast toast=warningToast(context,message,duration);
+    public static Toast centerInfo(Context context, String message, int duration){
+        Toast toast= warning(context,message,duration);
         toast.setGravity(Gravity.CENTER,0,0);
         return toast;
     }
@@ -146,8 +146,8 @@ public class ToastieActivity {
      * @param duration Duration of the toast message.
      * @return Toast.
      */
-    public static Toast topInfoToast(Context context,String message,int duration){
-        Toast toast=warningToast(context,message,duration);
+    public static Toast topInfo(Context context, String message, int duration){
+        Toast toast= warning(context,message,duration);
         toast.setGravity(Gravity.TOP,0,64);
         return toast;
     }
@@ -159,8 +159,8 @@ public class ToastieActivity {
      * @param duration Duration of the toast message.
      * @return Toast.
      */
-    public static Toast warningToast(Context context, String message,int duration){
-        return new ToastieActivity(context)
+    public static Toast warning(Context context, String message, int duration){
+        return new Toastie(context)
                 .setIcon(R.drawable.ic_warning_white_24dp)
                 .setMessage(message)
                 .setCardBackgroundColor(R.color.warningColor)
@@ -174,8 +174,8 @@ public class ToastieActivity {
      * @param duration Duration of the toast message.
      * @return Toast.
      */
-    public static Toast centerWarningToast(Context context,String message,int duration){
-        Toast toast=warningToast(context,message,duration);
+    public static Toast centerWarning(Context context, String message, int duration){
+        Toast toast= warning(context,message,duration);
         toast.setGravity(Gravity.CENTER,0,0);
         return toast;
     }
@@ -187,8 +187,8 @@ public class ToastieActivity {
      * @param duration Duration of the toast message.
      * @return Toast.
      */
-    public static Toast topWarningToast(Context context,String message,int duration){
-        Toast toast=warningToast(context,message,duration);
+    public static Toast topWarning(Context context, String message, int duration){
+        Toast toast= warning(context,message,duration);
         toast.setGravity(Gravity.TOP,0,64);
         return toast;
     }
@@ -200,8 +200,8 @@ public class ToastieActivity {
      * @param duration Duration of the toast message.
      * @return Toast.
      */
-    public static Toast errorToast(Context context, String message, int duration){
-        return new ToastieActivity(context)
+    public static Toast error(Context context, String message, int duration){
+        return new Toastie(context)
                 .setIcon(R.drawable.ic_error_black_24dp)
                 .setMessage(message)
                 .setCardBackgroundColor(R.color.errorColor)
@@ -215,8 +215,8 @@ public class ToastieActivity {
      * @param duration Duration of the toast message.
      * @return Toast.
      */
-    public static Toast centerErrorToast(Context context,String message,int duration){
-        Toast toast=errorToast(context,message,duration);
+    public static Toast centerError(Context context, String message, int duration){
+        Toast toast= error(context,message,duration);
         toast.setGravity(Gravity.CENTER,0,0);
         return toast;
     }
@@ -228,8 +228,8 @@ public class ToastieActivity {
      * @param duration Duration of the toast message.
      * @return Toast.
      */
-    public static Toast topErrorToast(Context context,String message,int duration){
-        Toast toast=errorToast(context,message,duration);
+    public static Toast topError(Context context, String message, int duration){
+        Toast toast= error(context,message,duration);
         toast.setGravity(Gravity.TOP,0,64);
         return toast;
     }
@@ -241,8 +241,8 @@ public class ToastieActivity {
      * @param duration Duration of the toast message.
      * @return Toast.
      */
-    public static Toast successToast(Context context, String message, int duration){
-        return new ToastieActivity(context)
+    public static Toast success(Context context, String message, int duration){
+        return new Toastie(context)
                 .setIcon(R.drawable.ic_check_circle_black_24dp)
                 .setMessage(message)
                 .setCardBackgroundColor(R.color.successColor)
@@ -256,8 +256,8 @@ public class ToastieActivity {
      * @param duration Duration of the toast message.
      * @return Toast.
      */
-    public static Toast centerSuccessToast(Context context,String message,int duration){
-        Toast toast=successToast(context,message,duration);
+    public static Toast centerSuccess(Context context, String message, int duration){
+        Toast toast= success(context,message,duration);
         toast.setGravity(Gravity.CENTER,0,0);
         return toast;
     }
@@ -269,8 +269,8 @@ public class ToastieActivity {
      * @param duration Duration of the toast message.
      * @return Toast.
      */
-    public static Toast topSuccessToast(Context context,String message,int duration){
-        Toast toast=successToast(context,message,duration);
+    public static Toast topSuccess(Context context,String message,int duration){
+        Toast toast= success(context,message,duration);
         toast.setGravity(Gravity.TOP,0,64);
         return toast;
     }
@@ -284,8 +284,8 @@ public class ToastieActivity {
      * @param duration Duration of the toast message.
      * @return Toast.
      */
-    public static Toast makeCustomToast(Context context, String message, int icon, int cardBackgroundColor, int duration){
-        return new ToastieActivity(context)
+    public static Toast custom(Context context, String message, int icon, int cardBackgroundColor, int duration){
+        return new Toastie(context)
                 .setIcon(icon)
                 .setMessage(message)
                 .setCardBackgroundColor(cardBackgroundColor)
@@ -301,8 +301,8 @@ public class ToastieActivity {
      * @param duration Duration of the toast message.
      * @return Toast.
      */
-    public static Toast makeCustomCenterToast(Context context, String message, int icon, int cardBackgroundColor, int duration){
-        Toast toast= makeCustomToast(context,message,icon,cardBackgroundColor,duration);
+    public static Toast customCenter(Context context, String message, int icon, int cardBackgroundColor, int duration){
+        Toast toast= custom(context,message,icon,cardBackgroundColor,duration);
         toast.setGravity(Gravity.CENTER,0,0);
         return toast;
     }
@@ -316,8 +316,8 @@ public class ToastieActivity {
      * @param duration Duration of the toast message.
      * @return Toast.
      */
-    public static Toast makeCustomTopToast(Context context, String message, int icon, int cardBackgroundColor, int duration){
-        Toast toast= makeCustomToast(context,message,icon,cardBackgroundColor,duration);
+    public static Toast customTop(Context context, String message, int icon, int cardBackgroundColor, int duration){
+        Toast toast= custom(context,message,icon,cardBackgroundColor,duration);
         toast.setGravity(Gravity.TOP,0,64);
         return toast;
     }
@@ -338,9 +338,9 @@ public class ToastieActivity {
      * @param duration Duration of the toast message.
      * @return Toast.
      */
-    public static Toast makeAllCustomToast(Context context,String message,int icon,int cardBackgroundColor,float cornerRadius,float elevation,
-                                           float textSize,Typeface typeface,int gravity,int xOffset,int yOffset,int duration){
-        Toast toast=new ToastieActivity(context)
+    public static Toast allCustom(Context context, String message, int icon, int cardBackgroundColor, float cornerRadius, float elevation,
+                                  float textSize, Typeface typeface, int gravity, int xOffset, int yOffset, int duration){
+        Toast toast=new Toastie(context)
                 .setIcon(icon)
                 .setMessage(message)
                 .setCardBackgroundColor(cardBackgroundColor)
@@ -354,11 +354,11 @@ public class ToastieActivity {
     }
 
     /**
-     * Simple way to create ToastieActivity. You can use it to fully customize toast.
+     * Simple way to create Toastie. You can use it to fully customize toast.
      * @param context Context
-     * @return ToastieActivity object
+     * @return Toastie object
      */
-    public static ToastieActivity makeAllCustomToast(Context context){
-        return new ToastieActivity(context);
+    public static Toastie allCustom(Context context){
+        return new Toastie(context);
     }
 }
